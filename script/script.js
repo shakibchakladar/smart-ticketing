@@ -18,11 +18,19 @@ function updateSeatCounts() {
         seatYouGot.innerText=4;
         alert('You have selected more than 4 tickets');
         document.getElementById(elementId).classList.add('hidden');
-
     }
-   
-    
- 
+}
+
+function setAppentFunction(){
+    const createdTag=document.createElement('')
+
+}
+
+
+function setTotalPrice(){
+    let sitSell=seatYouGot.innerText
+    totalTicketSell=sitSell*ticketPrice
+    priceDisplay.innerText=totalTicketSell;
 }
 
 
@@ -30,10 +38,11 @@ function setSeatBg(elementId) {
     document.getElementById(elementId).classList.add('bg-[#1DD100]');
 }
 
+
 function handleClick(event) {
     updateSeatCounts();
     setSeatBg(event.target.id);
-
+    setTotalPrice()
 }
 
 document.getElementById('A1').addEventListener('click', handleClick);
