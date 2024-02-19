@@ -130,7 +130,7 @@
                     </div>
                     <button class="btn btn-outline bg-[#1DD10026] border-none">
                         <img src="./images/seat-green.png" alt="">
-                        <h4>40 seat left</h4>
+                        <h4 id="Available-seat">40 seat left</h4>
                     </button>
                 </div>
                 <!-- route -->
@@ -191,25 +191,25 @@
                 <!-- sit nmbr -->
                 <div class="grid w-full grid-cols-5 gap-5 p-5 mt-16 ">
                     <h2>A</h2>
-                    <div class="py-4  bg-[#0307121A] rounded-xl flex justify-center items-center">A1</div>
-                    <div class=" py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">A2</div>
-                    <div class=" py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">A3</div>
-                    <div class=" py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">A4</div>
+                    <div id="A1" class="py-4  bg-[#0307121A] rounded-xl flex justify-center items-center">A1</div>
+                    <div id="A2" class=" py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">A2</div>
+                    <div id="A3" class=" py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">A3</div>
+                    <div id="A4" class=" py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">A4</div>
                     <h2>B</h2>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">B1</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">B2</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">B3</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">B4</div>
+                    <div id="B1" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">B1</div>
+                    <div id="B2" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">B2</div>
+                    <div id="B3" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">B3</div>
+                    <div id="B4" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">B4</div>
                     <h2>C</h2>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">C1</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">C2</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">C3</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">C4</div>
+                    <div id="C1" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">C1</div>
+                    <div id="C2" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">C2</div>
+                    <div id="C3" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">C3</div>
+                    <div id="C4" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">C4</div>
                     <h2>D</h2>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">D1</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">D2</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">D3</div>
-                    <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">D4</div>
+                    <div id="D1" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">D1</div>
+                    <div id="D2" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">D2</div>
+                    <div id="D3" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">D3</div>
+                    <div id="D4" class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">D4</div>
                     <h2>E</h2>
                     <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">E1</div>
                     <div class="py-4 bg-[#0307121A] rounded-xl flex justify-center items-center">E2</div>
@@ -249,41 +249,21 @@
 
                 <div class="mt-10 bg-[#F7F8F8] pr-20 py-7 rounded-xl">
                     <div class="ml-14">
-                        <table class="table ">
-                            <!-- head -->
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Seat <span class="p-2 text-white bg-green-500 rounded-2xl">2</span></th>
-                                    <th>class</th>
-                                    <th>Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- row 1 -->
-                                <!-- <tr class="px-10">
-                                    <th></th>
-                                    <td>C2</td>
-                                    <td>Economy</td>
-                                    <td>550</td>
-                                </tr> -->
-                                <!-- row 2 -->
-                                <!-- <tr>
-                                    <th></th>
-                                    <td>C2</td>
-                                    <td>Economy</td>
-                                    <td>550</td>
-                                </tr> -->
-                                <hr>
-                                <hr>
-                                <!-- <tr class="border-t-2 border-[#03071233] border-solid">
-                                    <td></td>
-                                    <td>Total price </td>
-                                    <td></td>
-                                    <td>1100</td>
-                                </tr> -->
-                            </tbody>
-                        </table>
+                        <div class="flex justify-around">
+                            <h2 class="">Seat <span id="seat-you-hired"
+                                    class="p-2 text-white bg-green-500 rounded-2xl">0</span> </h2>
+                            <h2>class</h2>
+                            <h2>Price</h2>
+                        </div>
+                        <hr>
+                        <div id="totalDisplay" class="flex justify-around p-5 text-xl">
+                        </div>
+                        <hr>
+                        <div class="flex justify-between p-3">
+                            <h2>Total Price</h2>
+                            <h2>BDT <Span class="total-price-display">0</Span> </h2>
+                        </div>
+
                         <label class="relative flex items-center gap-2 ml-10 input input-bordered">
                             <input class="w-56 h-12" type="text" class="grow" placeholder="Have any Coupon" />
                             <button class="absolute btn text-white bg-[#1DD100] -right-1">Apply</button>
@@ -332,9 +312,10 @@
 
 
     </main>
-    
 
 
+
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
