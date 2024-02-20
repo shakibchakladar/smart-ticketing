@@ -95,11 +95,25 @@ busSeat.forEach(el => el.addEventListener('click', function (event) {
 
 
 
-const popUp=document.getElementById('#27AE60');
-
+const popUp=document.getElementById('popup');
 
 function openPopUp(){
-    popUp.classList.remove('hidden');
+    popUp.classList.remove('hidden')
+    document.getElementById('footer').classList.add('hidden');
+    document.getElementById('mainn').classList.add('hidden');
+    document.getElementById('heaader').classList.add('hidden');
+    document.getElementById('popup').classList.add('mt-7')
+    
+
 }
-function closePopup(){}
+function closePopup(){
+    popUp.classList.add('hidden');
+    document.getElementById('footer').classList.remove('hidden');
+    document.getElementById('mainn').classList.remove('hidden');
+    document.getElementById('heaader').classList.remove('hidden');
+    
+    
+}
+
+
 
