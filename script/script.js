@@ -95,3 +95,11 @@ busSeat.forEach(el => el.addEventListener('click', function (event) {
 
 
 
+const popUp=document.getElementById('#27AE60');
+
+
+function openPopUp(){
+    popUp.classList.remove('hidden');
+}
+function closePopup(){}
+
